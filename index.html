@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Tech Blog</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Tech News</title>
   </head>
   <body>
     <header class="header">
@@ -23,19 +23,133 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="courses.html">Courses</a></li>
+            <li><a href="courses.html">Resources</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+
+          <img src="./images/burger-icon.svg" alt="menu" class="burger-menu" />
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- აქ იქნება Hero, About, Featured Articles და სხვა სექციები -->
+      <section class="hero">
+        <div class="hero-box">
+          <h1 class="hero-title">უახლესი სიახლეები ტექნოლოგიების სამყაროში</h1>
+          <p class="hero-text">
+            ვწერთ AI-ზე, თამაშებზე, ტექნიკაზე და ყველაფერზე რაც საინტერესოა
+            ტექნოლოგიების მოყვარულთათვის.
+          </p>
+          <a href="blog.html" class="main-btn">სტატიების ნახვა</a>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="articles-box">
+          <h2 class="title">გამორჩეული სტატიები</h2>
+
+          <div class="articles-list">
+            <article class="card">
+              <img src="./images/article1.jpg" alt="AI article" />
+              <h3>ხელოვნური ინტელექტი 2026 წელს</h3>
+              <p>რა ცვლილებები მოხდა AI სამყაროში ბოლო თვეებში.</p>
+              <a href="blog.html">წაკითხვა</a>
+            </article>
+
+            <article class="card">
+              <img src="./images/article2.jpg" alt="Gaming article" />
+              <h3>საუკეთესო თამაშები 2026-ში</h3>
+              <p>ჩვენი ტოპ არჩევანი წლის საუკეთესო თამაშებზე.</p>
+              <a href="blog.html">წაკითხვა</a>
+            </article>
+
+            <article class="card">
+              <img src="./images/article3.jpg" alt="Hardware article" />
+              <h3>ახალი პროცესორები - რას გვთავაზობენ</h3>
+              <p>მიმოხილვა წლის ახალ პროცესორებზე.</p>
+              <a href="blog.html">წაკითხვა</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-box">
+          <img src="./images/about-photo.jpg" alt="About us" />
+
+          <div class="about-text">
+            <h2 class="title">ჩვენს შესახებ</h2>
+            <p>
+              ჩვენ ვართ პატარა გუნდი, რომელსაც უყვარს ტექნოლოგიები და გვინდა
+              გავუზიაროთ ეს სიყვარული ქართულ აუდიტორიას. ვწერთ სტატიებს ქართულ
+              ენაზე, რომ ინფორმაცია ყველასთვის იყოს ხელმისაწვდომი.
+            </p>
+
+            <a href="about.html" class="second-btn">მეტის ნახვა</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trending">
+        <div class="trending-box">
+          <h2 class="title">პოპულარული ამ კვირაში</h2>
+
+          <div class="trending-list">
+            <article class="card">
+              <img src="./images/trending1.jpg" alt="Trending article" />
+              <h3>საუკეთესო ლეპტოპები სტუდენტებისთვის</h3>
+              <p>ბიუჯეტური და საშუალო ფასის ვარიანტები 2026 წელს.</p>
+              <a href="blog.html">წაკითხვა</a>
+            </article>
+
+            <article class="card">
+              <img src="./images/trending2.jpg" alt="Trending article" />
+              <h3>ხელოვნური ინტელექტების შედარება</h3>
+              <p>რომელი AI ასისტენტია საუკეთესო კოდირებისთვის.</p>
+              <a href="blog.html">წაკითხვა</a>
+            </article>
+
+            <article class="card">
+              <img src="./images/trending3.jpg" alt="Trending article" />
+              <h3>ახალი კონსოლები - რას ველოდოთ</h3>
+              <p>რა არის ახალი გეიმინგ ინდუსტრიაში.</p>
+              <a href="blog.html">წაკითხვა</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-box">
+          <h2 class="title">არ გამოტოვო სიახლეები</h2>
+          <p>გამოიწერე და მიიღე ახალი სტატიები პირდაპირ შენს ფოსტაზე.</p>
+
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="შენი ელ-ფოსტა"
+              class="email-input"
+            />
+
+            <button type="submit" class="main-btn">გამოწერა</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact-box">
+          <h2 class="title">გაქვთ კითხვა?</h2>
+          <p>დაგვიკავშირდით და გიპასუხებთ რაც შეიძლება მალე.</p>
+
+          <a href="contact.html" class="main-btn">დაკავშირება</a>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+      <div class="footer-box">
+        <p>@2026 Tech News. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
